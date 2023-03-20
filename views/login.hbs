@@ -1,0 +1,14 @@
+{{#if hasErrors}}
+{{#each messages}}
+{{this}}
+{{/each}}
+{{/if}}
+<form action="/login" method="post">
+     <label for="email">Enter Email</label> : <br>
+     <input type="email" name="email" id="email">
+     <br><br>
+     <label for="password">Enter Password</label> : <br>
+     <input type="password" name="password" id="password">
+     <br><br>
+     <button type="submit">Login</button>
+</form>
